@@ -1,7 +1,8 @@
-def fact_rec(num):
-    if num == 1:
-        return 1
-    else:
-        factorial = num * fact_rec(num)
+def fact(num):
+        factorial = 1
+        while num > 1:
+            factorial *= num
+            num -= 1
         return factorial
-print(fact_rec(4))
+n=int(input("enter the number:"))
+print(F" factorial of {n} is {fact(n)}")
